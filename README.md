@@ -1,1 +1,1 @@
-this is food order app.
+Food order app skeleton
