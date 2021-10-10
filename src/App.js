@@ -1,10 +1,11 @@
 import "./App.css";
+import FirstPage from "./firstPage/FirstPage";
 
 function App() {
   return (
-    <div>
-      <h1>Skeleton</h1>
-    </div>
+    <>
+      <FirstPage />
+    </>
   );
 }
 
