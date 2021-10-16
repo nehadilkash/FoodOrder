@@ -1,8 +1,9 @@
 import styles from "./Header.module.css";
-import BurgerMenu from "./BurgerMenu";
+import SideBar from "./SideBar";
 import GeoLocation from "./GeoLocation";
 import Profile from "./Profile";
-import profileImage from "./logo.png";
+import profileImage from "./logo.jpg";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 function Header() {
   const data = {
@@ -13,11 +14,19 @@ function Header() {
     icon: profileImage,
   };
   return (
-    <div className={styles.header}>
-      <BurgerMenu />
-      <GeoLocation />
-      <Profile profile={data}></Profile>
-    </div>
+    <Container>
+      <Row>
+        <Col xs="6" sm="2">
+          <Button />
+        </Col>
+        <Col xs="6" sm="7">
+          <GeoLocation />
+        </Col>
+        <Col sm="3">
+          <Profile profile={data}></Profile>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 export default Header;

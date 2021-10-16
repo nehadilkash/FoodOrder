@@ -1,11 +1,15 @@
-// import Card from "react-bootstrap/Card";
-
+// import { Card, CardGroup } from "react-bootstrap";
+import pizza from "./pizza.jpg";
+import burger from "./Burger.jpg";
+import cakes from "./cakes.jpg";
+import MyCard from "./MyCard";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import styles from "./ImageCard.module.css";
 const ImageCard = () => {
   return (
-    <div></div>
     // <CardGroup>
     //   <Card>
-    //     <Card.Img variant="top" src="holder.js/100px160" />
+    //     <Card.Img variant="top" src={foodImage1} />
     //     <Card.Body>
     //       <Card.Title>Card title</Card.Title>
     //       <Card.Text>
@@ -18,7 +22,7 @@ const ImageCard = () => {
     //     </Card.Footer>
     //   </Card>
     //   <Card>
-    //     <Card.Img variant="top" src="holder.js/100px160" />
+    //     <Card.Img variant="top" src={foodImage2} />
     //     <Card.Body>
     //       <Card.Title>Card title</Card.Title>
     //       <Card.Text>
@@ -31,7 +35,7 @@ const ImageCard = () => {
     //     </Card.Footer>
     //   </Card>
     //   <Card>
-    //     <Card.Img variant="top" src="holder.js/100px160" />
+    //     <Card.Img variant="top" src={foodImage3} />
     //     <Card.Body>
     //       <Card.Title>Card title</Card.Title>
     //       <Card.Text>
@@ -45,6 +49,19 @@ const ImageCard = () => {
     //     </Card.Footer>
     //   </Card>
     // </CardGroup>
+    <Container>
+      <Row>
+        <Col className={styles.col}>
+          <MyCard image={burger} name="Burger"></MyCard>
+        </Col>
+        <Col className={styles.col}>
+          <MyCard image={pizza} name="Pizza"></MyCard>
+        </Col>
+        <Col className={styles.col}>
+          <MyCard image={cakes} name="Cakes"></MyCard>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 export default ImageCard;

@@ -3,18 +3,41 @@ import ImageCard from "./body/ImageCard";
 import Footer from "./Footer";
 import Header from "./header/Header";
 import styles from "./Home-module.css";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import SingleCard from "./body/SingleCard";
+import SideBar from "./header/SideBar";
 
 const Home = () => {
   return (
     <>
-      <Header />
-      <div className="home">
-        <p>Hey!</p>
-        <p>Lets get your order</p>
-      </div>
-      <SearchBar />
-      <ImageCard />
-      <Footer />
+      <Container>
+        <Header />
+        <Container>
+          {/* <SideBar /> */}
+          <Row>
+            <Col>
+              <p>Hey!</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <p>Lets get your order</p>
+            </Col>
+          </Row>
+          <SearchBar />
+          <ImageCard />
+          <Row>
+            <Col>
+              <p>Popular</p>
+            </Col>
+            <Col>
+              <Button>view all</Button>
+            </Col>
+          </Row>
+          <SingleCard />
+        </Container>
+        <Footer />
+      </Container>
     </>
   );
 };
