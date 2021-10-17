@@ -1,14 +1,20 @@
-import styles from "./MyCard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import styles from "./MyCard.module.css";
+function test() {
+  console.log("its working");
+}
+
 const MyCard = (props) => {
   return (
     <>
-      <div className={styles.col}>
-        <img className={styles.img} src={props.image} />
-        <p className={styles.para}>{props.name}</p>
-        <button className={styles.button}>&gt;</button>
-      </div>
+      <img className={styles.img} src={props.image} />
+      <p className={styles.para}>{props.name}</p>
+      <FontAwesomeIcon
+        className={styles.icon}
+        icon="chevron-circle-right"
+        size="lg"
+        onClick={test}
+      />
     </>
   );
 };

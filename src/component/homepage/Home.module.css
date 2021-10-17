@@ -1,0 +1,30 @@
+.home {
+}
+.p {
+  font-size: large;
+  font-weight: 700;
+  color: black;
+}
+.hey {
+  color: black;
+  font-size: x-large;
+  font-style: bold;
+  font-weight: 700;
+}
+.getOrder {
+  font-size: large;
+  font-weight: 500;
+  color: grey;
+}
+.viewAll {
+  font-size: smaller;
+  font-weight: 500;
+  color: #d83434;
+}
+.view {
+  text-align: right;
+}
+
+.topCol {
+  display: none;
+}

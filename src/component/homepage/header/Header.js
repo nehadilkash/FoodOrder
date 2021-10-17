@@ -5,7 +5,7 @@ import Profile from "./Profile";
 import profileImage from "./logo.jpg";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-function Header() {
+const Header = (props) => {
   const data = {
     name: {
       firstName: "Neha",
@@ -14,19 +14,19 @@ function Header() {
     icon: profileImage,
   };
   return (
-    <Container>
-      <Row>
-        <Col xs="6" sm="2">
-          <Button />
-        </Col>
-        <Col xs="6" sm="7">
-          <GeoLocation />
-        </Col>
-        <Col sm="3">
-          <Profile profile={data}></Profile>
-        </Col>
-      </Row>
-    </Container>
+    // <Container>
+    <Row>
+      <Col xs={3}>
+        <button onClick={props.showSideBar} />
+      </Col>
+      <Col>
+        <GeoLocation />
+      </Col>
+      <Col className={styles.profile}>
+        <Profile profile={data}></Profile>
+      </Col>
+    </Row>
+    // </Container>
   );
-}
+};
 export default Header;

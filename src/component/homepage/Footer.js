@@ -1,18 +1,23 @@
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
+import styles from "./Footer.module.css";
 const Footer = () => {
   return (
-    <>
-      <Navbar>
-        <Container>
-          {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
+    <div>
+      <div className={styles.row}>
+        <div className={styles.col}>
+          <p>Home</p>
+        </div>
+        <div className={styles.col}>
+          <p>Favorites</p>
+        </div>
+        <div className={styles.col}>
+          <p>Acoounts</p>
+        </div>
+        <div className={styles.col}>
+          <p>more</p>
+        </div>
+      </div>
+    </div>
   );
 };
 export default Footer;

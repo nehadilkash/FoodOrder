@@ -1,24 +1,15 @@
 .img {
   border-radius: 15%;
-  width: 4.375em;
-  height: 3.75em;
+  width: 4.375rem;
+  height: 3.75rem;
 }
 
 .para {
   margin-top: 30%;
-  color: white;
+  color: black;
 }
 
-.button {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  color: #d83434;
-  background-color: white;
-  border-color: white;
+.icon {
+  margin-top: 20%;
+  color: black;
 }
-/* 
-.row > * {
-  padding-right: 10px;
-  padding-left: 10px;
-} */

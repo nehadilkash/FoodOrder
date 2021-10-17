@@ -1,4 +1,11 @@
-.geoLocation {
-  flex: 1;
+.icon {
+  color: #d83434;
+}
+
+.col {
   text-align: center;
+}
+
+.p {
+  font-weight: 700;
 }

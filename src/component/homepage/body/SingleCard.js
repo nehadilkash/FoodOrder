@@ -1,21 +1,25 @@
-import { Card } from "react-bootstrap";
-import foodImage from "./download.jpg";
+import { Col, Row } from "react-bootstrap";
+import foodImage from "./card.png";
+import styles from "./SingleCard.module.css";
 
 const SingleCard = () => {
   return (
-    <Card>
-      <Card.Img variant="top" src={foodImage} />
-      <Card.Body>
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </Card.Text>
-      </Card.Body>
-      <Card.Footer>
-        <small className="text-muted">Last updated 3 mins ago</small>
-      </Card.Footer>
-    </Card>
+    <div className={styles.div}>
+      <div className={styles.subdiv}>
+        <img className={styles.img} src={foodImage} />
+      </div>
+      <div>
+        <Row>
+          <Col className={styles.colleft}>
+            <p className={styles.p}>Chipotle Cheesy Chicken</p>
+            <p className={styles.psub}>Chicken Burger</p>
+          </Col>
+          <Col className={styles.colright}>
+            <p className={styles.p}>$20.95</p>
+          </Col>
+        </Row>
+      </div>
+    </div>
   );
 };
 export default SingleCard;

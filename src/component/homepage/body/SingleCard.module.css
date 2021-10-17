@@ -1,0 +1,41 @@
+.div {
+  -webkit-border-radius: 0.75rem;
+  box-shadow: 5px 10px 18px #88888866;
+  background-color: white;
+  height: 20rem;
+}
+
+.subdiv {
+  margin: 3%;
+  -webkit-border-radius: 0.75rem;
+  background-color: #d83434;
+  height: 15rem;
+  text-align: center;
+}
+
+.img {
+  width: auto;
+  height: 19rem;
+  margin-top: -5rem;
+}
+
+.colleft {
+  margin-left: 3%;
+}
+
+.colright {
+  text-align: right;
+  margin-right: 3%;
+}
+
+.p {
+  font-weight: 650;
+  font-size: medium;
+}
+
+.psub {
+  font-weight: 400;
+  font-size: medium;
+  color: grey;
+  margin-top: -1rem;
+}

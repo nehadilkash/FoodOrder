@@ -1,8 +1,18 @@
 .col {
-  /* position: absolute; */
-  background-color: #d83434;
-  /* width: fit-content; */
-  padding: 8%;
+  background-color: white;
+
+  box-shadow: 5px 10px 18px #88888866;
+  text-align: center;
+  padding: 5%;
   margin: 3%;
-  border-radius: 15%;
+  border-radius: 5%;
+}
+
+.col:hover {
+  background-color: #d83434;
+  box-shadow: 5px 10px 18px white;
+}
+
+.col:hover .p {
+  color: white;
 }

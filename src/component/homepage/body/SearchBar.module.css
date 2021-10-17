@@ -1,0 +1,19 @@
+.row {
+  box-shadow: 5px 10px 18px #88888866;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  /* border-radius: 10%; */
+  padding: 1%;
+  -webkit-border-radius: 0.263rem;
+}
+
+.text {
+  border: hidden;
+  width: 100%;
+  font-size: smaller;
+}
+
+.icon {
+  margin-top: 0.263rem;
+  color: grey;
+}
