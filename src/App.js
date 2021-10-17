@@ -7,8 +7,23 @@ import {
   faChevronCircleRight,
   faMapMarkerAlt,
   faAngleRight,
+  faBars,
+  faThLarge,
+  faHeart,
+  faUser,
+  faEllipsisH,
 } from "@fortawesome/free-solid-svg-icons";
-library.add(faSearch, faChevronCircleRight, faMapMarkerAlt, faAngleRight);
+library.add(
+  faSearch,
+  faChevronCircleRight,
+  faMapMarkerAlt,
+  faAngleRight,
+  faBars,
+  faThLarge,
+  faHeart,
+  faUser,
+  faEllipsisH
+);
 function App() {
   return (
     <div className="app">

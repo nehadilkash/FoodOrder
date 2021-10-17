@@ -25,10 +25,10 @@ const Home = () => {
   return (
     <>
       <Row>
-        <Col className={`${!showMenuBar && styles.topCol}`} xs={2}>
+        <Col className={`${!showMenuBar && styles.firstCol}`} xs={2}>
           {showMenuBar ? <MenuBar /> : null}
         </Col>
-        <Col>
+        <Col className={styles.secondCol}>
           <Header showSideBar={onClick} />
           <Row>
             <Col>
@@ -56,6 +56,7 @@ const Home = () => {
           <SingleCard />
         </Col>
       </Row>
+      <div className={styles.down} />
       <Footer />
     </>
   );

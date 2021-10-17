@@ -7,8 +7,14 @@
   text-align: center;
   max-width: none;
   display: flex;
+  color: grey;
+  height: 3rem;
 }
 
 .col {
   flex: 1;
+}
+
+.col:hover {
+  color: #d83434;
 }

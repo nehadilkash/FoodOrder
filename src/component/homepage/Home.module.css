@@ -25,6 +25,13 @@
   text-align: right;
 }
 
-.topCol {
+.firstCol {
   display: none;
+}
+.down {
+  height: 3.5rem;
+}
+
+.secondCol {
+  margin: 3%;
 }

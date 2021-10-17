@@ -4,6 +4,7 @@ import GeoLocation from "./GeoLocation";
 import Profile from "./Profile";
 import profileImage from "./logo.jpg";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = (props) => {
   const data = {
@@ -14,10 +15,9 @@ const Header = (props) => {
     icon: profileImage,
   };
   return (
-    // <Container>
     <Row>
       <Col xs={3}>
-        <button onClick={props.showSideBar} />
+        <FontAwesomeIcon icon="bars" onClick={props.showSideBar} />
       </Col>
       <Col>
         <GeoLocation />
@@ -26,7 +26,6 @@ const Header = (props) => {
         <Profile profile={data}></Profile>
       </Col>
     </Row>
-    // </Container>
   );
 };
 export default Header;
