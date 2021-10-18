@@ -4,18 +4,20 @@ import styles from "./GeoLocation.module.css";
 const GeoLocation = () => {
   return (
     <>
-      <Row>
-        <Col xs={1} className={styles.col}>
+      <div className={styles.row}>
+        <div className={(styles.col, styles.firstCol)}>
           <FontAwesomeIcon
             className={styles.icon}
             icon="map-marker-alt"
             size="lg"
           ></FontAwesomeIcon>
-        </Col>
-        <Col>
+        </div>
+        <div className={styles.col}>
           <p className={styles.p}>Hyderabad, India</p>
-        </Col>
-      </Row>
+        </div>
+      </div>
+      {/* </Col>
+      </Row> */}
     </>
   );
 };

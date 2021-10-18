@@ -3,7 +3,14 @@
 }
 
 .col {
-  text-align: center;
+  flex: 1;
+}
+
+.firstCol {
+  width: 10%;
+}
+.row {
+  display: flex;
 }
 
 .p {

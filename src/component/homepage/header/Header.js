@@ -15,7 +15,7 @@ const Header = (props) => {
     icon: profileImage,
   };
   return (
-    <Row>
+    <Row className={styles.row}>
       <Col xs={3}>
         <FontAwesomeIcon icon="bars" onClick={props.showSideBar} />
       </Col>

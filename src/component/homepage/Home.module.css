@@ -25,13 +25,22 @@
   text-align: right;
 }
 
-.firstCol {
-  display: none;
-}
 .down {
   height: 3.5rem;
 }
-
+.withoutOverlay {
+  display: none;
+}
 .secondCol {
-  margin: 3%;
+  margin-left: 3%;
+  position: absolute;
+}
+.row {
+  position: relative;
+}
+
+.overlay {
+  z-index: 9;
+  position: absolute;
+  height: 100%;
 }

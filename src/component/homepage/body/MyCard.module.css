@@ -1,12 +1,13 @@
 .img {
   border-radius: 15%;
-  width: 4.375rem;
-  height: 3.75rem;
+  width: 100%;
+  height: auto;
+  margin-right: 3%;
 }
 
 .para {
   margin-top: 30%;
-  color: black;
+  color: rgb(63, 35, 35);
 }
 
 .icon {
