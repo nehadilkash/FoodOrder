@@ -16,8 +16,14 @@
 .col:hover {
   background-color: #d83434;
   box-shadow: 5px 10px 18px white;
+  color: white;
+  /* font-size: 150%; */
+}
+
+/* .col:active {
+  transform: scale(0.98);
 }
 
 .col:hover .p {
   color: white;
-}
+} */

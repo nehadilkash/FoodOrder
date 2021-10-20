@@ -14,3 +14,12 @@
   margin-top: 20%;
   color: black;
 }
+
+.icon:hover {
+  color: active;
+  font-size: 150%;
+}
+
+.icon:active {
+  transform: scale(0.88);
+}

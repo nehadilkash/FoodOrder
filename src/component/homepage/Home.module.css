@@ -40,7 +40,16 @@
 }
 
 .overlay {
-  z-index: 9;
-  position: absolute;
   height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d83434;
+  color: #fff;
+  /* overflow-x: hidden; */
+  padding-top: 60px;
+  transition: 0.5s;
+  text-align: -webkit-center;
 }

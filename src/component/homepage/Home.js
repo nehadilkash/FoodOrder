@@ -5,7 +5,6 @@ import Header from "./header/Header";
 import styles from "./Home.module.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import SingleCard from "./body/SingleCard";
-import SideBar from "./header/SideBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MenuBar from "./MenuBar/MenuBar";
 import React, { useState } from "react";
@@ -31,11 +30,11 @@ const Home = () => {
 
   return (
     <>
-      <Row className={styles.row}>
+      <div className={styles.row}>
         <div
-          className={`${!showMenuBar && styles.withoutOverlay} ${
-            styles.overlay
-          }`}
+          className={`${
+            !showMenuBar ? styles.withoutOverlay : styles.overlay
+          } `}
         >
           {showMenuBar ? <MenuBar /> : null}
         </div>
@@ -72,7 +71,7 @@ const Home = () => {
             <div className={styles.down} />
           </div>
         </div>
-      </Row>
+      </div>
       <Footer />
     </>
   );
